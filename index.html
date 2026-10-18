@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>English Fun｜英文小天地</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf6e9;--ink:#22324a;--soft:#5d6b80;--card:#ffffff;--edge:#22324a;--red:#e2483d;--green:#2f7a52;--sky:#bfe4f6;--straw:#f3dc8c;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#18202c;--ink:#f3eedf;--soft:#aab4c3;--card:#232d3c;--edge:#0e141c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#18202c;--ink:#f3eedf;--soft:#aab4c3;--card:#232d3c;--edge:#0e141c;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Andika,"Trebuchet MS","Microsoft JhengHei",sans-serif}
+main{max-width:900px;margin:0 auto;padding:36px 18px 56px}
+h1{font-size:clamp(2.4rem,8vw,3.8rem);line-height:1;margin:0 0 10px}
+.lead{margin:0 0 30px;color:var(--soft);font-size:1.15rem}
+.grid{display:grid;gap:24px;grid-template-columns:1fr}
+@media (min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+a.tile{display:block;text-decoration:none;color:inherit;background:var(--card);border:3px solid var(--edge);border-radius:22px;overflow:hidden;box-shadow:0 6px 0 var(--edge);transition:transform .12s,box-shadow .12s}
+a.tile:hover{transform:translateY(-3px);box-shadow:0 9px 0 var(--edge)}
+a.tile:active{transform:translateY(4px);box-shadow:0 2px 0 var(--edge)}
+a.tile:focus-visible{outline:4px solid #2f7fd0;outline-offset:4px}
+.art{display:block;width:100%;height:auto;border-bottom:3px solid var(--edge)}
+.txt{padding:16px 18px 20px}
+.txt h2{margin:0 0 4px;font-size:1.7rem}
+.txt p{margin:0;color:var(--soft);font-size:1.05rem}
+@media (prefers-reduced-motion:reduce){a.tile{transition:none}a.tile:hover,a.tile:active{transform:none}}
+</style>
+</head>
+<body>
+<main>
+<h1>English Fun</h1>
+<p class="lead">點一下，開始聽、開始玩！</p>
+<div class="grid">
+  <a class="tile" href="look-and-listen-red-hen-web.html">
+    <svg class="art" viewBox="0 0 320 170" aria-hidden="true">
+      <rect width="320" height="170" fill="#b9cfdc"/>
+      <rect y="136" width="320" height="34" fill="#7aa35a"/>
+      <g stroke="#4a86b8" stroke-width="3" stroke-linecap="round"><path d="M40 30 l-6 14 M80 60 l-6 14 M250 36 l-6 14 M280 80 l-6 14 M60 100 l-6 14"/></g>
+      <g transform="translate(110 30) scale(1.05)" stroke="#5a1a14" stroke-width="2.2" stroke-linejoin="round">
+        <path d="M22 58 L4 34 L24 44 L16 20 L34 40 L36 22 L44 44 Z" fill="#a9261c"/>
+        <ellipse cx="56" cy="70" rx="38" ry="29" fill="#e2483d"/>
+        <circle cx="86" cy="42" r="18" fill="#e2483d"/>
+        <circle cx="79" cy="24" r="6" fill="#c41d2f"/><circle cx="88" cy="21" r="6.5" fill="#c41d2f"/><circle cx="97" cy="26" r="6" fill="#c41d2f"/>
+        <path d="M102 38 L116 44 L102 49 Z" fill="#f6a623"/>
+        <path d="M36 66 Q52 52 70 66 Q56 84 36 66 Z" fill="#b8302a"/>
+        <circle cx="92" cy="37" r="3.6" fill="#22324a" stroke="none"/>
+        <path d="M48 97 L46 110 M64 97 L66 110" stroke="#e08a12" stroke-width="4" stroke-linecap="round"/>
+      </g>
+    </svg>
+    <div class="txt"><h2>Look and listen</h2><p>My red hen：看圖聽故事</p></div>
+  </a>
+  <a class="tile" href="word-game.html">
+    <svg class="art" viewBox="0 0 320 170" aria-hidden="true">
+      <rect width="320" height="170" fill="#f3dc8c"/>
+      <g font-family="Andika, sans-serif" font-weight="700" font-size="44" text-anchor="middle">
+        <g transform="translate(70 92) rotate(-8)"><rect x="-34" y="-36" width="68" height="68" rx="12" fill="#e2483d" stroke="#22324a" stroke-width="3"/><text y="14" fill="#fff">A</text></g>
+        <g transform="translate(160 78) rotate(4)"><rect x="-34" y="-36" width="68" height="68" rx="12" fill="#5fa8d3" stroke="#22324a" stroke-width="3"/><text y="14" fill="#fff">B</text></g>
+        <g transform="translate(250 96) rotate(-3)"><rect x="-34" y="-36" width="68" height="68" rx="12" fill="#2f7a52" stroke="#22324a" stroke-width="3"/><text y="14" fill="#fff">C</text></g>
+      </g>
+    </svg>
+    <div class="txt"><h2>Word games</h2><p>學單字：邊玩邊記</p></div>
+  </a>
+</div>
+</main>
+</body>
+</html>
