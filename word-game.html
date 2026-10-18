@@ -69,6 +69,9 @@ button:focus-visible{outline:4px solid var(--sky);outline-offset:3px}
 }
 .home:active{transform:translateY(3px);box-shadow:0 1px 0 var(--shadow)}
 .home[hidden]{display:none}
+.sitehome{width:auto;padding:0 14px 0 10px;display:flex;align-items:center;gap:6px;font-weight:800;font-size:17px;text-decoration:none;color:var(--text)}
+.sitehome svg{width:20px;height:20px}
+.sitehome:focus-visible{outline:4px solid var(--sky);outline-offset:3px}
 
 .screen{display:none}
 .screen.active{display:block}
@@ -227,6 +230,7 @@ button:focus-visible{outline:4px solid var(--sky);outline-offset:3px}
     <svg class="mascot" id="mascot" viewBox="0 0 70 92" aria-hidden="true"></svg>
     <div class="bubble" id="bubble">嗨！今天想練習哪一組單字呢？</div>
     <button class="home" id="homeBtn" hidden aria-label="回到選單">🏠</button>
+    <a class="home sitehome" id="siteHome" href="index.html" aria-label="回網站首頁"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.2 12 4l9 7.2V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z" fill="currentColor"/></svg>回首頁</a>
   </div>
 
   <section class="screen active" id="s-pick">
@@ -775,6 +779,7 @@ function show(name){
   token++;
   screens.forEach(s => $('#s-'+s).classList.toggle('active', s === name));
   $('#homeBtn').hidden = name === 'menu' || name === 'pick';
+  $('#siteHome').hidden = !(name === 'menu' || name === 'pick');
   window.scrollTo(0,0);
 }
 function progress(n, now){
